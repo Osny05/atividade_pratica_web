@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Web</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <!--Nosso cabeçalho simples.-->
+    <header class="container">
+        <h1>Seja Bem-Vindo(a)!</h1>
+    </header>
+
+    <!--Nosso menu principal.-->
+    <nav class="container menu">
+        <!--Lista não ordenada com itens que são links que levam a outras partes do código-->
+        <ul>
+            <li><a href="#sobreMim">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação Profissional</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!--Sobre Mim-->
+    <div class="container inicial">
+        <!--Foto que fica ao lado esquerdo do conteúdo principal-->
+        <aside style="grid-column-start: 1; grid-column-end: 3;">
+            <img class="imagem" src="eu.png" alt="Minha foto" width="60%">
+        </aside>
+
+        <section class="texto1">
+            <h1 id="sobreMim" style="font-size: 50px; text-align: center;">Sobre Mim</h1>
+            <p>Olá! Meu nome é Osny Matheus Braine Lins e tenho 19 anos. Nasci em Curitiba - PR mas moro no município
+                paranaense de Rio Branco do Sul. Suscitou em mim o interesse pela área da Tecnologia da Informação em
+                meados de 2020, durante a pandemia. Comecei a programar pela linguagem C# e, com ela, aprendi o básico
+                de Programação Orientada a Objetos. Escolhi o C# principalmente visando utilizá-lo na engine Unity,
+                motor de desenvolvimento de video-games, uma vez que, dentro da área de TI, o Game Development
+                especificamente sempre me atraiu.</p>
+            <p>Após a conclusão do Ensino Médio no Colégio Estadual Maria da Luz Furquim, continuei a estudar a
+                linguagem C# durante o ano de 2022. No começo de 2023, ingressei no Centro Universitário Internacional -
+                UNINTER - e estou cursando Análise e Desenvolvimento de Sistemas.</p>
+            <p>Dentre meus hobbies, a leitura destaca-se especialmente por sua praticamente infinita capacidade de
+                imersão e pela quantidade de obras de uma qualidade incrível. Meu atual livro favorito é a saga The
+                Kingkiller Chronicle, especialmente O Nome do Vento. Uma vez que atraio-me pela área de Game
+                Development, é fácil supor que jogar também figura entre minhas atividades favoritas. Especiamente jogos
+                focados em narrativas profundas, com uma história rica e personagens memoráveis, de preferência tendo
+                resolvimento de Puzzles e até elementos de terror. Um outro particular interesse meu é jogar RPG
+                (Role-Playing Game) com amigos.</p>
+        </section>
+    </div>
+
+    <!--Formação-->
+    <div class="container">
+        <section class="formacaoD">
+            <h1 id="formacao" style="font-size: 50px; margin-left: 35px;">Formação</h1>
+            <!--Lista não ordenada-->
+            <ul style="list-style-type: circle;">
+                <li style="float: none;">Ensino Médio Completo - Colégio Estadual Maria da Luz Furquim (2021)</li>
+                <li style="float: none;">Curso de Informática - Inove (2019)</li>
+                <li style="float: none;">Curso de Design Gráfico - Inove (2019)</li>
+                <li style="float: none;">C# Completo: Programação Orientada a Objetos + Projetos - Udemy (2022)</li>
+                <li style="float: none;">Análise e Desenvolvimento de Sistemas - Uninter (2025)</li>
+                <li style="float: none;">Inglês Básico</li>
+            </ul>
+            <h1 style="font-size: 50px; margin-left: 35px;">Tecnologias</h1>
+            <ul style="list-style-type: circle;">
+                <li style="float: none;">C#</li>
+                <li style="float: none;">Java</li>
+                <li style="float: none;">Python</li>
+                <li style="float: none;">GIT</li>
+                <li style="float: none;">HTML, CSS e JS</li>
+            </ul>
+            <img src="formacao.png" alt="">
+        </section>
+    </div>
+
+    <!--Portfólio-->
+    <section class="container inicial">
+
+        <h1 id="portfolio" style="font-size: 50px; text-align: center;">Portfólio</h1>
+
+        <div class="card">
+
+            <div style="margin-left: 400px; margin-bottom: 150px;">
+                <div class="">
+                    <h3 style="text-align: center">Jogo de Xadrez Feito em C# que Roda no Console</h2>
+                        <h3 style="text-align: center"><a href="https://github.com/Osny05/xadrez-console"
+                                style="color: gray;">Ver Repositório</a></h3>
+                </div>
+                <img src="peao.png"
+                    style="height: 200px; width: 200px; border: 2px solid black; border-radius: 60px; margin-left: 100px;">
+            </div>
+
+            <div style="margin-left: 150px; margin-bottom: 150px;">
+                <div class="">
+                    <h3 style="text-align: center">Site Pet-Shop Simples para Atividade Extensionista</h2>
+                        <h3 style="text-align: center"><a
+                                href="https://osny05.github.io/atividade_extensionista/front-end/index.html"
+                                style="color: gray;">Acessar Site</a></h3>
+                </div>
+                <img src="gato.png"
+                    style="height: 200px; width: 200px; border: 2px solid black; border-radius: 60px; margin-left: 100px;">
+            </div>
+        </div>
+    </section>
+
+    <!--Contato-->
+    <div class="container">
+
+        <section class="formacaoD">
+            <div>
+                <h1 id="contato" style="font-size: 50px; text-align: center;">Contato</h1>
+                <form style="margin-left: 700px; margin-bottom: 75px;">
+                    <table>
+                        <tr>
+                            <th><label for="nome">Seu nome:</label></th>
+                            <td><input type="text" name="nome" id="nome"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="email">E-mail:</label></th>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="msg">Sua mensagem:</label></th>
+                            <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <button>Enviar</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>            
+        </section>
+    </div>
+</body>
+</html>

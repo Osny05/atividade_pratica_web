@@ -1,0 +1,97 @@
+/*Zerar a margem*/
+body {
+    margin: 0;
+}
+
+/*Útil para organizar os conteúdos*/
+.container {
+    display: grid;
+}
+
+/*Cuida da aparência do cabeçalho*/
+header {
+    background-color: #242832;
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    font-size: 25px;
+}
+
+/*Cuida da aparência do menu e o deixa centralizado*/
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    background-color: #242832;
+    gap: 20px;
+}
+
+/*Tira a bolinha característica de listas não ordenadas.*/
+ul {
+    list-style-type: none;
+}
+
+/*Detalhes dos links*/
+a,
+a:link {
+    border-radius: 90px;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: white;
+}
+
+/*Detalhes dos itens do menu*/
+li {
+    font-size: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/*Quando o mouse estiver sobre o link, isso vai acontecer:*/
+a:hover {
+    background-color: white;
+    color: #242832;
+}
+
+/*Cuida da aparência da imagem*/
+.imagem {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 50px;
+    margin-top: 150px;
+    border-radius: 100%;
+    border: white solid 5px;
+}
+
+/*Diz respeito ao primeiro texto*/
+.texto1 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 50px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+/*Cuida da parte inicial, a parte do Sobre Mim*/
+.inicial {
+    color: white;
+    background-color: #242832;
+    opacity: 80%;
+}
+.formacaoD {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    text-align: justify;
+    font-size: 25px;
+    background-color: #242832;
+    color: white;
+}
+
+/*Altera o modo do display da parte do portfólio e o deixa organizado na vertical*/
+.card {
+    display: flex;
+    flex-flow: row wrap;
+}
